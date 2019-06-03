@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Geometria Bold";
+    src: url("../font/Geometria-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Geometria Regular";
+    src: url("../font/Geometria-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: "Geometria Heavy";
+    src: url("../font/Geometria-Heavy.ttf");
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  font-family: "Geomatria Regular";
+}
+
+h1{
+  font-family: "Geometria Bold";
+}
+
+.nav{
+	width: 100%;
+}
+
+#background { 
+  margin-top: 15px;
+  /* The image used */
+  background-image: url("../img/background.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+/*#fullpage{  
+  height: 100%;
+  padding: 0px !important;
+}*/
+
+.first-column {
+  background-color: black;
+  display: grid;
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.second-column {
+  background-color: black;
+  display: grid;
+  width: 50%; 
+  float: right;
+  height: 100%;
+}
+
+.first-column span,.second-column span{
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  color: white;
+}
+
+img{
+  max-height: 90%;
+  width:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#register{
+  padding-top: 10px;
+  margin-left:20%;
+}
+
+::placeholder { 
+  color: white;
+}
+
+.ccbtn {
+  font-family: "Geometria Bold";
+  color: #000000;  
+  background-color: white;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+}
+
+.ccbtn:hover {
+  opacity:0.9;
+  text-decoration: none;
+  color: black;
+}
+
+.btn-rounded{
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+
+#vorname, #nachname{
+    border: 0px;
+    border-bottom: 1.3px solid #f7f7f7;
+    background-color: transparent;
+    font-family: "Geometria Regular";
+    color: white;
+  }
+
+#container {
+  margin-left:25%;
+  margin-right:25%;
+  background-color:black;
+  height:100%;
+}
+
+@media screen and (max-width:1200px) {
+  .pic {
+    display:none;
+  }
+  .first-column, .second-column {
+    width: 100%;
+  }
+  #background{
+    background-image: url("../img/new/3-1.jpg");
+  } 
+}
+
